@@ -196,7 +196,7 @@ export default function IsometricRegion(regionName, opts = {}) {
       ...this.region,
       canvasWidth, // px
       canvasHeight, //px
-      locations: locations,
+      locations: locations.map((itm) => ({ ...itm, tileMap: undefined })),
       locationCount: locations.length
     };
     return region;
