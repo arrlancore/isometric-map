@@ -125,7 +125,6 @@ export default function IsometricRegion(regionName, opts = {}) {
     newLocation.tileMap = Array.from({
       length: this.region.locationWidth
     }).map(() => []);
-    console.log(args[1], newLocation.tileMap);
     newLocation.tiles = [];
     // when create the firs location, coordinate always 0,0
     if (locations.length === 0) {
@@ -253,7 +252,6 @@ export default function IsometricRegion(regionName, opts = {}) {
         return { id: asset.id, img };
       })
     );
-
     const tileImages = assetImage.reduce((acc, item) => {
       acc[item.id] = item.img;
       return acc;
