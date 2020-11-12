@@ -149,7 +149,6 @@ ${JSON.stringify(wordFishing.retrieveAll(), null, 3)}
 wordFishing
   .convertLocationToCanvasSources("L101", Object.values(assets))
   .then((canvasSources) => {
-    console.log(canvasSources);
     const canvas = document.getElementById("canvasiso");
     if (canvas) {
       drawImage(canvas, canvasSources);
